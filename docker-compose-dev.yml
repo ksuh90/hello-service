@@ -6,6 +6,12 @@ services:
         volumes:
             - client-sync:/opt/app:nocopy
 
+    server:
+        volumes:
+            - server-sync:/opt/app:nocopy
+
 volumes:
+    server-sync:
+        external: true
     client-sync:
         external: true

@@ -1,0 +1,20 @@
+version: '2'
+
+syncs:
+      server-sync:
+            src: './server'
+            sync_excludes: ['node_modules']
+            sync_host_ip: 'auto'
+            sync_host_port: 10873
+            sync_group: root
+            sync_userid: 0
+            sync_strategy: 'rsync'
+
+      client-sync:
+            src: './client'
+            sync_excludes: ['node_modules']
+            sync_host_ip: 'auto'
+            sync_host_port: 10874
+            sync_group: root
+            sync_userid: 0
+            sync_strategy: 'rsync'
