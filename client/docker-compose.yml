@@ -1,0 +1,7 @@
+version: '2.1'
+
+services:
+    client:
+        build: ./
+        ports:
+            - "6021:6021"

@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+
+    client:
+        volumes:
+            - client-sync:/opt/app:nocopy
+
+volumes:
+    client-sync:
+        external: true
